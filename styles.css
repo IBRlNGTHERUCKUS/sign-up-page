@@ -1,7 +1,12 @@
+:root {
+    --darker-white: #f9fafb;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .left {
@@ -35,4 +40,26 @@ body {
 
 .right {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.top, .bottom {
+    background-color: var(--darker-white);
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.top, .bottom, .middle {
+    padding: 1rem;
+    flex: 1;
+}
+
+.top {
+    justify-content: flex-end;
+}
+
+.bottom button {
+    width: fit-content;
 }

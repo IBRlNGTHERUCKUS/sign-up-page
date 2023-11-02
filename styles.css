@@ -2,6 +2,11 @@
     --darker-white: #f9fafb;
 }
 
+@font-face {
+    font-family: Barlow-Regular;
+    src: url(./fonts/Barlow-Regular.ttf);
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +19,7 @@ body {
     background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    min-width: 300px;
+    min-width: 150px;
     position: relative;
 }
 
@@ -42,11 +47,11 @@ body {
     flex: 2;
     display: flex;
     flex-direction: column;
+    font-family: Barlow-Regular;
 }
 
 .top, .bottom {
     background-color: var(--darker-white);
-    background-color: grey;
     display: flex;
     flex-direction: column;
 }
@@ -60,6 +65,11 @@ body {
     justify-content: flex-end;
 }
 
+.middle {
+    box-shadow: 5px 2px 10px rgba(3, 4, 46, 0.27);
+    z-index: 0;
+}
+
 .bottom button {
     width: fit-content;
 }
@@ -71,6 +81,7 @@ body {
 
 .form-item {
     padding: 6px 0;
+    font-size: 0.9rem;
 }
 
 label {

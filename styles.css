@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.left {
+    flex: 1;
+    background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-width: 300px;
+    position: relative;
+}
+
+.logo-container {
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.611);
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.bg-credit {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.bg-credit a {
+    color: white;
+}
+
+.right {
+    flex: 2;
+}

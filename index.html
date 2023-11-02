@@ -17,45 +17,45 @@
     <div class="right">
         <div class="top">
             <p><b>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> up now to get started</b></p>
-            <p><b>You <em>know</em> you want to</b></p>
+            <p><b>You <em>know</em> you want to.</b></p>
         </div>
         <div class="middle">
-            <form id="create-account" action="httpbin.org/post" method="post">
+            <form id="create-account" action="http://httpbin.org/post" method="post">
                 <h1><b>Let's do this!</b></h1>
                 <div class="form-row">
                     <div class="form-item">
                         <label for="first-name">FIRST NAME</label>
-                        <input id="first-name" name="first-name" type="text">
+                        <input id="first-name" name="first-name" type="text" required>
                     </div>
                     <div class="form-item">
                         <label for="last-name">LAST NAME</label>
-                        <input id="last-name" name="last-name" type="text">
+                        <input id="last-name" name="last-name" type="text" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-item">
                         <label for="email">EMAIL</label>
-                        <input id="email" name="email" type="text">
+                        <input id="email" name="email" type="email" required>
                     </div>
                     <div class="form-item">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input id="phone-number" name="phone-number" type="text">
+                        <input id="phone-number" name="phone-number" type="tel" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-item">
                         <label for="password">PASSWORD</label>
-                        <input id="password" name="password" type="text">
+                        <input id="password" name="password" type="password" required>
                     </div>
                     <div class="form-item">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input id="confirm-password" name="password-confirm" type="text">
+                        <input id="confirm-password" name="password-confirm" type="password" required>
                     </div>
                 </div>
             </form>
         </div>
         <div class="bottom">
-            <button type="submit" for="create-account">Create Account</button>
+            <button type="submit" form="create-account">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
 

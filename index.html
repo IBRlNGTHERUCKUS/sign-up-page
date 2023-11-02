@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="left">
+        <div class="logo-container">
+            <img src="./images/odin-logo.png" alt="A cartoonish odin" class="logo">
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <p><b>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> up now to get started</b></p>
+            <p><b>You <em>know</em> you want to</b></p>
+        </div>
+        <div class="middle">
+            <form id="create-account" action="httpbin.org/post" method="post">
+                <h1><b>Let's do this!</b></h1>
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" type="text">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="last-name" type="text">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <label for="phone-number">Phone Number</label>
+                <input id="phone-number" name="phone-number" type="text">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="text">
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" name="password-confirm" type="text">
+            </form>
+        </div>
+        <div class="bottom">
+            <button type="submit" for="create-account">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
